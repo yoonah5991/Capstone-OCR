@@ -1,0 +1,126 @@
+buildscript {
+	ext {
+		springBootVersion = '1.4.0.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'war'
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+	//apply plugin: 'eclipse'
+apply plugin: 'spring-boot'
+
+test.enabled=false
+
+war {
+	baseName = 'Capstone'
+	version = 'v0.1'
+	
+	manifest {
+       attributes 'Main-Class': 'com.Capstone.Application'
+    }
+	
+}
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+configurations {
+	providedRuntime
+}
+project.ext {
+    springCloudVersion = '1.0.2.RELEASE'
+}
+dependencies {
+
+	//Spring
+	compile('org.springframework.boot:spring-boot-starter-web')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile("org.springframework.boot:spring-boot-starter-freemarker")
+
+	//For cafe24(tomcat-WAS) distribution
+	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
+	
+	//jsp
+	compile('org.apache.tomcat.embed:tomcat-embed-jasper')
+	compile('javax.servlet:jstl:1.2')
+	
+	//security
+	//compile 'org.springframework.security:spring-security-web:4.1.2.RELEASE'
+	//compile 'org.springframework.security:spring-security-config:4.1.2.RELEASE'
+	//compile 'org.springframework.security:spring-security-taglibs:4.0.4.RELEASE'
+	//compile('org.springframework.boot:spring-boot-starter-security')
+
+	
+	//Database
+	//compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: '1.3.5.RELEASE'
+	//compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.2'
+	//compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.38'
+	//('org.springframework:spring-jdbc')	
+	
+	
+	//mybatis
+	//compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '1.1.1'
+	//compile group: 'org.mybatis', name: 'mybatis-typehandlers-jsr310', version: '1.0.1'
+	//compile group: 'org.apache.ibatis', name: 'ibatis-core', version: '3.0'
+	//compile 'org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.1-SNAPSHOT'
+	//compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '1.1.1'
+	//compile group: 'org.mybatis', name: 'mybatis-typehandlers-jsr310', version: '1.0.1'
+	
+	//logback
+	compile('ch.qos.logback:logback-classic:1.1.2')
+	compile('ch.qos.logback:logback-core:1.1.2')
+	compile('org.slf4j:slf4j-api:1.7.6')
+	compile 'org.codehaus.janino:janino:2.7.7'
+	
+	//fileupload
+	compile group: 'org.projectlombok', name: 'lombok', version: '1.16.8'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+    compile group: 'commons-io', name: 'commons-io', version: '2.5'
+    
+    //mail
+    compile "org.springframework:spring-context-support"
+    compile "com.sun.mail:javax.mail"
+    compile("org.springframework.boot:spring-boot-starter-mail")
+    compile group: 'org.apache.commons', name: 'commons-email', version: '1.1'
+ 	compile group: 'org.json', name: 'json', version: '20160810'
+ 	compile group: 'com.sun.mail', name: 'smtp', version: '1.5.6'
+ 	
+ 	compile 'javax.validation:validation-api:1.1.0.Final'
+	compile 'org.hibernate:hibernate-validator:5.0.1.Final'
+	
+	//cglib
+	compile group: 'cglib', name: 'cglib', version: '3.1'
+	// https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
+	compile group: 'org.apache.poi', name: 'poi-ooxml', version: '3.15'
+
+    compile("org.springframework.cloud:spring-cloud-aws-context:${springCloudVersion}")
+	
+	compile("commons-io:commons-io:2.4")
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: '1.4.3.RELEASE'
+	
+	//gson
+	compile group: 'com.google.code.gson', name: 'gson', version: '2.8.0'
+	
+	
+
+	testCompile("org.springframework.boot:spring-boot-starter-test")
+}
+
+eclipse {
+	classpath {
+		 containers.remove('org.eclipse.jdt.launching.JRE_CONTAINER')
+		 containers 'org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8'
+	}
+}		
