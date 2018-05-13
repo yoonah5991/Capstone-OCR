@@ -65,6 +65,8 @@ body {font-family: "Lato", sans-serif}
       <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
     </div>
   </div>
+  
+
 
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
@@ -152,6 +154,13 @@ body {font-family: "Lato", sans-serif}
       </div>
     </div>
   </div>
+  
+  	<form method="POST" enctype="multipart/form-data" action="/test-upload">
+		<div>
+			<input type="file" name="file" />
+			<input type="submit" value="Upload" />
+		</div>
+	</form>
 
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
