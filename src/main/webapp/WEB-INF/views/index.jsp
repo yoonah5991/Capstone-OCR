@@ -22,14 +22,7 @@ body {font-family: "Lato", sans-serif}
     <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Introduction</a>
     <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Guides</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Sample Page</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
-      </div>
-    </div>
+    <a href="#members" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Members</a>
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
 </div>
@@ -39,7 +32,7 @@ body {font-family: "Lato", sans-serif}
   <a href="#band" class="w3-bar-item w3-button w3-padding-large">BAND</a>
   <a href="#tour" class="w3-bar-item w3-button w3-padding-large">TOUR</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
+  <a href="#members" class="w3-bar-item w3-button w3-padding-large">MEMBERS</a>
 </div>
 
 <!-- Page content -->
@@ -60,7 +53,7 @@ body {font-family: "Lato", sans-serif}
     <p class="w3-justify">Machine learning OCR 프로젝트는 머신러닝 기술이 접목시킨 OCR 프로그램 제작을 목표로 하고 있습니다.</p>
     <p class="w3-justify">그 결과, 현존하는 다른 OCR 프로그램보다 더 좋은 문자인식 기능을 발휘할 수 있을 것으로 예상하고 있습니다.</p>
       <p class="w3-justify">
-이 웹페이지에서 머신러닝 OCR 프로젝트의 소개 및 배포, 구성원 소개를 위해 제작되었습니다.</p>
+이 웹페이지는 머신러닝 OCR 프로젝트의 소개 및 배포, 구성원 소개를 위해 제작되었습니다.</p>
 <p class="w3-justify">그리고 사용자가 직접 체험해 볼 수 있는 샘플 페이지를 제공하고 있습니다.</p>
   </div>
 
@@ -68,7 +61,7 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-black" id="tour">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">Guides</h2>
-      <p class="w3-opacity w3-center"><i>How to use the program</i></p><br>
+      <p class="w3-opacity w3-center"><i>How does it work?</i></p><br>
 	<p class="w3-justify">1. 시스템 구성</p>
 	<img src="https://i.imgur.com/kmqlBxh.jpg" style="width:100%">
 	<p class="w3-justify">1.1 이미지 전송</p>
@@ -131,26 +124,32 @@ upload.onchange = function (e) {
   </div>
   
 <!-- End Page Content -->
+<!-- The Band Section -->
+<div class="w3-black" id="tour">
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="members">
+    <h2 class="w3-wide">Members</h2>
+    <p class="w3-opacity"><i></i></p>
+    <p class="w3-justify">
+이 곳에는 구성원 소개와 사진 집어넣을 예정</p>
+	<p class="w3-opacity"><i></i></p>
+    <p class="w3-justify">
+OCLow Team (Dankook Univ.)</p>
+	<p class="w3-opacity"><i></i></p>
+    <p class="w3-justify">1. 윤지원</p>
+    <p class="w3-opacity"><i></i></p>
+    <p class="w3-justify">2. 박윤아</p>
+    <p class="w3-opacity"><i></i></p>
+    <p class="w3-justify">3. 김성현</p>
+    <p class="w3-opacity"><i></i></p>
+    <p class="w3-justify">4. 서영준</p>
+    <p class="w3-opacity"><i></i></p>
+      
+<p class="w3-justify">Source code : https://github.com/yoonah5991/Capstone-OCR</p>
+  </div>
+  </div>
 </div>
 <!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
-<script>
-function myMap() {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
