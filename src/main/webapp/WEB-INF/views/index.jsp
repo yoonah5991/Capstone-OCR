@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<%@ page session="false"
+contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <html>
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
@@ -52,27 +54,14 @@ body {font-family: "Lato", sans-serif}
 
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">Machine Learning OCR</h2>
+    <h2 class="w3-wide">Machine learning OCR</h2>
     <p class="w3-opacity"><i>Find the letters in your photos!</i></p>
-    <p class="w3-justify">This page is for testing. </p>
-    <p class="w3-justify">
-On this web page, we are introducing and distributing our project and providing sample pages that you can actually try.</p>
-    <p class="w3-justify">The project aims to create an OCR program that combines machine learning.</p>
-    <p class="w3-justify">It is expected to provide better character recognition than existing products.</p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="https://i.imgur.com/Y53JK7L.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-      </div>
-    </div>
+    <p class="w3-justify">*이 페이지는 현재 테스트 중입니다.*(종설) </p>
+    <p class="w3-justify">Machine learning OCR 프로젝트는 머신러닝 기술이 접목시킨 OCR 프로그램 제작을 목표로 하고 있습니다.</p>
+    <p class="w3-justify">그 결과, 현존하는 다른 OCR 프로그램보다 더 좋은 문자인식 기능을 발휘할 수 있을 것으로 예상하고 있습니다.</p>
+      <p class="w3-justify">
+이 웹페이지에서 머신러닝 OCR 프로젝트의 소개 및 배포, 구성원 소개를 위해 제작되었습니다.</p>
+<p class="w3-justify">그리고 사용자가 직접 체험해 볼 수 있는 샘플 페이지를 제공하고 있습니다.</p>
   </div>
 
   <!-- The Tour Section -->
@@ -80,7 +69,16 @@ On this web page, we are introducing and distributing our project and providing 
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">Guides</h2>
       <p class="w3-opacity w3-center"><i>How to use the program</i></p><br>
-	<p class="w3-justify">How to use the program.. ^^?</p>
+	<p class="w3-justify">1. 시스템 구성</p>
+	<img src="https://i.imgur.com/kmqlBxh.jpg" style="width:100%">
+	<p class="w3-justify">1.1 이미지 전송</p>
+	<p class="w3-justify"></p>
+	<p class="w3-justify">1.2 OpenCV 모듈</p>
+	<p class="w3-justify"></p>
+	<p class="w3-justify">1.3 딥러닝 모델</p>
+	<p class="w3-justify"></p>
+	<p class="w3-justify">1.4 OCR 모듈</p>
+	<p class="w3-justify"></p>
     </div>
   </div>
 
@@ -115,8 +113,8 @@ upload.onchange = function (e) {
   reader.onload = function (event) {
     var img = new Image();
     img.src = event.target.result;
-    if (img.width > 560) { 
-      img.width = 560;
+    if (img.width > 800) { 
+      img.width = 800;
     }
     if(img.height > 560){
     	img.height = 560;
@@ -129,6 +127,7 @@ upload.onchange = function (e) {
   return false;
 };
 </script>
+<p class="w3-justify">검출된 문자 : ${text }</p>
   </div>
   
 <!-- End Page Content -->
