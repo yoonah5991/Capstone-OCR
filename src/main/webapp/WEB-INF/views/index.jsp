@@ -47,13 +47,14 @@ body {font-family: "Lato", sans-serif}
 
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">Machine learning OCR</h2>
+    <h2 class="w3-wide">Machine learning OCR Project</h2>
     <p class="w3-opacity"><i>Find the letters in your photos!</i></p>
     <p class="w3-justify">*이 페이지는 현재 테스트 중입니다.*(종설) </p>
-    <p class="w3-justify">Machine learning OCR 프로젝트는 머신러닝 기술이 접목시킨 OCR 프로그램 제작을 목표로 하고 있습니다.</p>
-    <p class="w3-justify">그 결과, 현존하는 다른 OCR 프로그램보다 더 좋은 문자인식 기능을 발휘할 수 있을 것으로 예상하고 있습니다.</p>
+    <p class="w3-justify">현재 존재하는 OCR 프로그램들은 각각 다른 글씨체와 명암 여부 등 여러가지 환경에 의하여 발생하는 인식률 하락 등 여러가지 한계점을 가지고 있습니다.</p>
+    <p class="w3-justify">그래서 우리는 기존 OCR 기술에 기계학습법을 접목시킨 새로운 OCR 프로그램 제작을 목표로 하고 있습니다.</p>
+    <p class="w3-justify">그 결과, 기존 OCR 프로그램보다 더 좋은 문자인식 기능을 발휘할 수 있을 것으로 예상하고 있습니다.</p>
       <p class="w3-justify">
-이 웹페이지는 머신러닝 OCR 프로젝트의 소개 및 배포, 구성원 소개를 위해 제작되었습니다.</p>
+이 웹페이지는 Machine learning OCR Project의 소개 및 배포, 팀 구성원 소개를 위해 제작되었습니다.</p>
 <p class="w3-justify">그리고 사용자가 직접 체험해 볼 수 있는 샘플 페이지를 제공하고 있습니다.</p>
   </div>
 
@@ -62,16 +63,25 @@ body {font-family: "Lato", sans-serif}
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">Guides</h2>
       <p class="w3-opacity w3-center"><i>How does it work?</i></p><br>
-	<p class="w3-justify">1. 시스템 구성</p>
+	<p class="w3-justify">1. 동작 원리</p>
 	<img src="https://i.imgur.com/kmqlBxh.jpg" style="width:100%">
+	<p class="w3-justify"></p>
 	<p class="w3-justify">1.1 이미지 전송</p>
+	<p class="w3-justify">브라우저 또는 모바일 환경에서 접속한 사용자는 문자 인식을 원하는 이미지를 선택하여 서버로 전송시킵니다. 이 때 스트림을 이용한 이미지 전송이 이루어지며 서버로 전송된 이미지는 Opencv모듈에서 불러오기 위한 특정한 저장소에 저장이 됩니다. </p>
 	<p class="w3-justify"></p>
 	<p class="w3-justify">1.2 OpenCV 모듈</p>
+	<p class="w3-justify">사용자의 머신에서 전송된 이미지는 OpenCV를 이용한 전처리 과정을 거칩니다. 전처리 과정이란 이미지 내에 있는 글자로 의심되는 영역들을 더욱 쉽게 파싱할 수 있도록 하는 과정이며 Gray Filter 등 여러가지의 Filter를 적용하여 글자부분을 두드러지게 만듭니다.</p>
 	<p class="w3-justify"></p>
 	<p class="w3-justify">1.3 딥러닝 모델</p>
+	<p class="w3-justify">전처리 과정이 끝난 이미지는 텐서플로 환경에서 사전에 설계된 딥러닝 모델을 이용하여 문자 여부를 판별하게 됩니다. 딥러닝 모델은 약 1700여장의 학습 데이터를 바탕으로 훈련시킨 모델이며 2018년 5월 oo일 기준 약 00%의 정확도를 보여주고 있습니다. </p>
 	<p class="w3-justify"></p>
 	<p class="w3-justify">1.4 OCR 모듈</p>
+	<p class="w3-justify">딥러닝 모델에서 글자로 판별된 이미지들은 OCR모듈을 이용하여 실제 글자를 추출합니다. 사용되는 OCR모듈은 ~~이며 ~~~입니다. </p>
 	<p class="w3-justify"></p>
+	<p class="w3-justify">1.5 텍스트 전송</p>
+	<p class="w3-justify">OCR모듈을 거쳐 생성된 문자를 소켓을 이용하여 클라이언트로 전송시킵니다. 사용자는 판별된 문자들의 출력결과를 자신이 선택했던 이미지와 함께 직접 확인할 수 있게 됩니다.</p>
+    <p class="w3-justify"></p>  
+	<p class="w3-justify"><font size = '4'>Source code : https://github.com/yoonah5991/Capstone-OCR</font></p>
     </div>
   </div>
 
@@ -130,7 +140,7 @@ upload.onchange = function (e) {
     <h2 class="w3-wide">Members</h2>
     <p class="w3-opacity"><i></i></p>
     <p class="w3-justify">
-이 곳에는 구성원 소개와 사진 집어넣을 예정</p>
+이 곳에는 구성원 소개와 사진 집어넣으면 좋을듯</p>
 	<p class="w3-opacity"><i></i></p>
     <p class="w3-justify">
 OCLow Team (Dankook Univ.)</p>
@@ -143,8 +153,6 @@ OCLow Team (Dankook Univ.)</p>
     <p class="w3-opacity"><i></i></p>
     <p class="w3-justify">4. 서영준</p>
     <p class="w3-opacity"><i></i></p>
-      
-<p class="w3-justify">Source code : https://github.com/yoonah5991/Capstone-OCR</p>
   </div>
   </div>
 </div>
