@@ -21,7 +21,7 @@ body {font-family: "Lato", sans-serif}
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="#Introduction" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Introduction</a>
     <a href="#Guides" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Guides</a>
-    <a href="#SamplePage" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Sample Page</a>
+    <a href="#SamplePage" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SamplePage</a>
     <a href="#Team" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Team</a>
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
@@ -29,10 +29,10 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large">Introduction</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">Guides</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Sample Page</a>
-  <a href="#members" class="w3-bar-item w3-button w3-padding-large">Team</a>
+  <a href="#Introduction" class="w3-bar-item w3-button w3-padding-large">Introduction</a>
+  <a href="#Guides" class="w3-bar-item w3-button w3-padding-large">Guides</a>
+  <a href="#SamplePage" class="w3-bar-item w3-button w3-padding-large">Sample Page</a>
+  <a href="#Team" class="w3-bar-item w3-button w3-padding-large">Team</a>
 </div>
 
 <!-- Page content -->
@@ -46,21 +46,21 @@ body {font-family: "Lato", sans-serif}
   </div>
 
   <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Introduction">
     <h2 class="w3-wide">Machine learning OCR Project</h2>
     <p class="w3-opacity"><i>Find the letters in your photos!</i></p>
     <p class="w3-justify">　</p>
     <p class="w3-justify"><strong>OCR(Optical Character Recognition, 광학 문자 인식)</strong>은 사람이 쓰거나 기계가 인쇄한 문자의 영상을 획득하여 텍스트로 변환해주는 기술을 뜻하며 디지털 문서와 서적, 간판 등을 대상으로 다양한 목적으로 사용되고 있습니다.</p>
     <p class="w3-justify">하지만, 현재 존재하는 OCR 프로그램들은 각각 상이한 글씨체의 존재 또는 배경의 명암 여부 등 여러가지 환경에 의하여 나타나는 인식률 하락 등 여러가지 한계점을 가지고 있습니다.</p>
     <p class="w3-justify">그래서 우리는 기존 OCR 기술에 기계학습을 접목시켜 간판 및 표지판 인식에 특화된 새로운 OCR 프로그램을 제작하였습니다.</p>
-    <p class="w3-justify">이 새로운 프로그램은 기존 OCR 프로그램보다 환경에 구애받지 않고 더 좋은 문자인식 기능을 발휘할 수 있을 것으로 예상하고 있습니다. 또한, 간판 및 표지판 인식을 통한 위치와 정보 제공 등 향후 다양한 분야에 활용될 수 있을 것으로 기대하고 있습니다.</p>
+    <p class="w3-justify">이 새로운 프로그램은 기존 OCR 프로그램보다 환경에 구애받지 않고 더 좋은 문자인식 기능을 발휘할 수 있을 것으로 예상하고 있습니다. 그리고 간판 및 표지판 인식을 통한 위치와 정보 제공 등 향후 다양한 분야에 활용될 수 있을 것으로 기대하고 있습니다.</p>
     <p class="w3-justify">　</p>
-    <p class="w3-justify">이 페이지는 Machine learning OCR Project의 소개 및 배포, 팀 구성원 소개를 위해 제작되었습니다.</p>
+    <p class="w3-justify">이 페이지는 Machine learning OCR 프로젝트의 소개 및 배포, 팀 구성원 소개를 위해 제작되었습니다.</p>
 	<p class="w3-justify">그리고 사용자가 프로그램을 직접 체험해 볼 수 있는 샘플 페이지를 제공하고 있습니다.</p>
   </div>
 
   <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
+  <div class="w3-black" id="Guides">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">Guides</h2>
       <p class="w3-opacity w3-center"><i>How does it work?</i></p><br>
@@ -69,7 +69,7 @@ body {font-family: "Lato", sans-serif}
 	<p class="w3-justify">　</p>
 	<p class="w3-justify">(1) 이미지 전송</p>
 	<p class="w3-justify">브라우저 또는 모바일 환경에서 접속한 사용자는 문자 인식을 원하는 이미지를 선택하여 서버로 전송시킵니다. </p>
-	<p class="w3-justify">Stream을 이용한 전송이 이루어지며 전송된 이미지는 Opencv모듈에서 불러오기 위한 저장소에 저장이 됩니다.</p>
+	<p class="w3-justify">Stream을 이용한 전송이 이루어지며 전송된 이미지는 OpenCV 모듈에서 불러오기 위한 저장소에 저장이 됩니다.</p>
 	<p class="w3-justify">　</p>
 	<p class="w3-justify">(2) OpenCV 모듈</p>
 	<p class="w3-justify">사용자의 머신에서 전송된 이미지는 OpenCV를 이용한 전처리 과정을 거칩니다. </p>
@@ -81,20 +81,20 @@ body {font-family: "Lato", sans-serif}
 	<p class="w3-justify">이 모델은 약 1700여장의 학습 이미지 데이터를 바탕으로 훈련시켰으며 2018년 6월 4일 기준 약 95%의 문자 판별 정확도를 보여주고 있습니다.</p>
 	<p class="w3-justify">　</p>
 	<p class="w3-justify">(4) OCR 모듈</p>
-	<p class="w3-justify">딥러닝 모델에서 글자로 판별된 이미지들은 OCR모듈을 이용하여 실제 글자를 추출합니다.</p>
-	<p class="w3-justify">OCR모듈은 오픈소스로 공개된 OCR엔진을 사용합니다.</p>
+	<p class="w3-justify">딥러닝 모델에서 글자로 판별된 이미지들은 OCR 모듈을 이용하여 실제 텍스트를 추출합니다.</p>
+	<p class="w3-justify">OCR 모듈은 오픈소스로 공개된 OCR 엔진을 사용합니다.</p>
 	<p class="w3-justify">　</p>
 	<p class="w3-justify">(5) 텍스트 전송</p>
-	<p class="w3-justify">OCR모듈을 거쳐 판별된 문자를 소켓을 이용하여 클라이언트로 전송시킵니다.</p>
+	<p class="w3-justify">OCR모듈을 거쳐 판별된 텍스트를 소켓을 이용하여 클라이언트로 전송시킵니다.</p>
     <p class="w3-justify">사용자는 자신이 선택했던 이미지와 함께 출력결과를 직접 확인할 수 있게 됩니다.</p>
     <p class="w3-justify">　</p>
-    <p class="w3-justify">○ Source code : <a href="https://github.com/yoonah5991/Capstone-OCR">https://github.com/yoonah5991/Capstone-OCR</a></p>  
+   
     </div>
   </div>
 
 
   <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="SamplePage">
     <h2 class="w3-wide w3-center">Sample Page</h2>
     <p class="w3-opacity w3-center"><i>Try it yourself!</i></p>
 <article>
@@ -112,7 +112,7 @@ if (typeof window.FileReader === 'undefined') {
   state.className = 'fail';
 } else {
   state.className = 'success';
-  state.innerHTML = '글자를 판별하고 싶은 사진을 입력시키세요.';
+  state.innerHTML = '글자를 판별하고 싶은 사진을 선택하세요.';
 }
  
 upload.onchange = function (e) {
@@ -145,22 +145,25 @@ upload.onchange = function (e) {
 <div class="w3-black" id="tour">
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Team">
     <h2 class="w3-wide">Team</h2>
-    <p class="w3-opacity w3-center"><i>Infomation of Members</i></p>
+    <p class="w3-opacity w3-center"><i>Information of Team</i></p>
     <p class="w3-opacity"><i></i></p>
     <p class="w3-justify"></p>
 	<p class="w3-opacity"><i></i></p>
-    <p class="w3-justify"><Strong>Team Name : OCLow (Dankook Univ.)</Strong></p>
+    <p class="w3-justify">Team Name : <Strong>OCLow</Strong></p>
 	<p class="w3-opacity"><i></i></p>
-    <p class="w3-justify"><strong>Team Members:</strong></p>
+    <p class="w3-justify">Team Members :</p>
     <p class="w3-opacity"><i></i></p>
-    <p class="w3-justify">　윤지원 (32131727, Team Leader)</p>
+    <p class="w3-justify">- 윤지원 (Team Leader, OpenCV 모듈 설계)</p>
     <p class="w3-opacity"><i></i></p>
-    <p class="w3-justify">　박윤아 (32151836)</p>
+    <p class="w3-justify">- 박윤아 (TensorFlow를 이용한 딥러닝 모델 설계)</p>
     <p class="w3-opacity"><i></i></p>
-    <p class="w3-justify">　김성현 (32131690)</p>
+    <p class="w3-justify">- 김성현 (학습 데이터 수집 및 분류)</p>
     <p class="w3-opacity"><i></i></p>
-    <p class="w3-justify">　서영준 (32121826)</p>
+    <p class="w3-justify">- 서영준 (웹 프론트 제작)</p>
     <p class="w3-opacity"><i></i></p>
+    <p class="w3-justify">Development period : 2018. 3 ~ 2018. 6</p>
+    <p class="w3-opacity"><i></i></p>
+    <p class="w3-justify">Source code : <a href="https://github.com/yoonah5991/Capstone-OCR">https://github.com/yoonah5991/Capstone-OCR</a></p>  
   </div>
   </div>
 </div>
