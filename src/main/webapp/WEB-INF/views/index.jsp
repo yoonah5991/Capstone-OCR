@@ -53,9 +53,9 @@ body {font-family: "Lato", sans-serif}
     <p class="w3-justify"><strong>OCR(Optical Character Recognition, 광학 문자 인식)</strong>은 사람이 쓰거나 기계가 인쇄한 문자의 영상을 획득하여 텍스트로 변환해주는 기술을 뜻하며 디지털 문서와 서적, 간판 등을 대상으로 다양한 목적으로 사용되고 있습니다.</p>
     <p class="w3-justify">하지만, 현재 존재하는 OCR 프로그램들은 각각 상이한 글씨체의 존재 또는 배경의 명암 여부 등 여러가지 환경에 의하여 나타나는 인식률 하락 등 여러가지 한계점을 가지고 있습니다.</p>
     <p class="w3-justify">그래서 우리는 기존 OCR 기술에 <strong>기계학습을 접목시켜 간판 및 표지판 인식에 특화된</strong> 새로운 OCR 프로그램을 제작하였습니다.</p>
-    <p class="w3-justify">이 새로운 프로그램은 기존 OCR 프로그램보다 환경에 구애받지 않고 더 좋은 문자인식 기능을 발휘할 수 있을 것으로 예상하고 있습니다. 그리고 간판 및 표지판 인식을 통한 위치와 정보 제공 등 향후 다양한 분야에 활용될 수 있을 것으로 기대하고 있습니다.</p>
+    <p class="w3-justify">이 새로운 프로그램은 기존 OCR 프로그램보다 환경에 구애받지 않고 더 좋은 문자인식 기능을 발휘할 수 있을 것으로 예상하고 있습니다. 또한 간판 및 표지판 인식을 통한 위치와 정보 제공 등 향후 다양한 분야에 활용할 수 있을 것으로 기대하고 있습니다.</p>
     <p class="w3-justify">　</p>
-    <p class="w3-justify">이 페이지는 <strong>Machine learning OCR 프로젝트의 소개 및 배포, 팀 구성원 소개</strong>를 위해 제작되었습니다.</p>
+    <p class="w3-justify">이 페이지는 <strong>프로젝트의 설명 및 배포</strong>, 그리고 <strong>팀 구성원 소개</strong>를 위해 제작되었습니다.</p>
 	<p class="w3-justify">그리고 사용자가 프로그램을 직접 체험해 볼 수 있는 <strong>샘플 페이지</strong>를 제공하고 있습니다.</p>
   </div>
 
@@ -81,7 +81,7 @@ body {font-family: "Lato", sans-serif}
 	<p class="w3-justify">이 모델은 약 1700여장의 학습 이미지 데이터를 바탕으로 훈련시켰으며 약 95%의 정확도를 보여주고 있습니다.</p>
 	<p class="w3-justify">　</p>
 	<p class="w3-justify">(4) OCR 모듈</p>
-	<p class="w3-justify">딥러닝 모델에서 글자로 판별된 이미지들은 OCR 모듈을 이용하여 <strong>텍스트로 변환</strong>됩니다.</p>
+	<p class="w3-justify">딥러닝 모델에서 글자로 판별된 이미지들은 OCR 모듈을 이용하여 <strong>텍스트로 변환</strong>시킵니다.</p>
 	<p class="w3-justify">OCR 모듈은 오픈소스로 공개된 OCR 엔진을 사용합니다.</p>
 	<p class="w3-justify">　</p>
 	<p class="w3-justify">(5) 텍스트 전송</p>
