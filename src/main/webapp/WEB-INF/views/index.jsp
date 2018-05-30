@@ -78,7 +78,7 @@ body {font-family: "Lato", sans-serif}
 	<p class="w3-justify">　</p>
 	<p class="w3-justify">(3) 딥러닝 모델</p>
 	<p class="w3-justify">전처리 과정이 끝난 이미지는 텐서플로 환경에서 사전에 학습된 딥러닝 모델을 이용하여 <strong>문자 여부를 판별</strong>합니다.</p>
-	<p class="w3-justify">이 모델은 약 1700여장의 학습 이미지 데이터를 바탕으로 훈련시켰으며 2018년 6월 4일 기준 약 95%의 문자 판별 정확도를 보여주고 있습니다.</p>
+	<p class="w3-justify">이 모델은 약 1700여장의 학습 이미지 데이터를 바탕으로 훈련시켰으며 약 95%의 정확도를 보여주고 있습니다.</p>
 	<p class="w3-justify">　</p>
 	<p class="w3-justify">(4) OCR 모듈</p>
 	<p class="w3-justify">딥러닝 모델에서 글자로 판별된 이미지들은 OCR 모듈을 이용하여 <strong>텍스트로 변환</strong>됩니다.</p>
