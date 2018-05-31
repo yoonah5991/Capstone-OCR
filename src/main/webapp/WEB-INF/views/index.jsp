@@ -23,7 +23,7 @@ body {font-family: "Lato", sans-serif}
     <a href="#Guides" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Guides</a>
     <a href="#SamplePage" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SamplePage</a>
     <a href="#Team" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Team</a>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    <!--  <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a> -->
   </div>
 </div>
 
@@ -185,6 +185,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
 
 <!-- Footer -->
+<!-- 
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
   <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -194,6 +195,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
   <i class="fa fa-linkedin w3-hover-opacity"></i>
   <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
+-->
 
 <script>
 // Automatic Slideshow - change image every 4 seconds
@@ -213,6 +215,8 @@ function carousel() {
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
+
+
 function myFunction() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
@@ -221,6 +225,7 @@ function myFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
 
 // When the user clicks anywhere outside of the modal, close it
 var modal = document.getElementById('ticketModal');
