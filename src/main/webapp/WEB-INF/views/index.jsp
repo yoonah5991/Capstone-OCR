@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Machine Learning OCR</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="/Capstone/src/main/webapp/WEB-INF/views/template/css.css">
-<link rel="stylesheet" href="/Capstone/src/main/webapp/WEB-INF/views/template/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="resources/template/w3.css">
+<link rel="stylesheet" type="text/css" href="resources/template/css.css">
+<link rel="stylesheet" type="text/css" href="resources/template/font-awesome.min.css">
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -107,6 +107,8 @@ if (typeof window.FileReader === 'undefined') {
   state.innerHTML = 'Select an image from your machine to read the contents of the file!';
 }
  
+
+
 upload.onchange = function (e) {
   e.preventDefault();
 
@@ -128,8 +130,16 @@ upload.onchange = function (e) {
 
   return false;
 };
+
 </script>
   </div>
+  
+	<form method="POST" enctype="multipart/form-data" action="/test-upload">
+		<div>
+			<input type="file" name="file" />
+			<input type="submit" value="Upload" />
+		</div>
+	</form>
   
 <!-- End Page Content -->
 </div>
